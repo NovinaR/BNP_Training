@@ -1,0 +1,36 @@
+package boimpl;
+
+import java.io.FileNotFoundException;
+import java.util.List;
+
+import bo.LockerBO;
+import model.Locker;
+
+public class LockerBOImpl implements LockerBO{
+
+	@Override
+	public List<Locker> getallfiles() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Locker createfile(Locker locker) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Locker deletefile(String filename) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Locker searchfile(String filename) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

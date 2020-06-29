@@ -1,0 +1,45 @@
+package boimpl;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import bo.LockerBO;
+import model.Locker;
+
+public class LockerBOImpl implements LockerBO{
+	
+	private static Map<Integer, Locker> lockerMap=new HashMap<>();
+	private static int fileid=0;
+
+	@Override
+	public List<String> getallfiles() {
+		List<String> lockerList=new ArrayList<>();
+		lockerMap.values();
+		return lockerList;
+	}
+
+	@Override
+	public Locker createfile(Locker locker) {
+		locker.setId(++fileid);
+		lockerMap.put(locker.getId(),locker);
+		return locker;
+	}
+
+	@Override
+	public Locker deletefile(String filename) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Locker searchfile(String filename) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

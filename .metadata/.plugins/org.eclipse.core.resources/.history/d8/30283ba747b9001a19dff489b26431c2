@@ -1,0 +1,15 @@
+package bo;
+
+import java.awt.List;
+
+import model.Locker;
+
+public interface LockerBO {
+	
+	public List<Locker> getallfiles() throws BusinessException;
+	public Locker createfile(String filename);
+	public Locker deletefile(String filename) throws FileNotFoundException;
+	public Locker searchfile(String filename);
+
+}
+s

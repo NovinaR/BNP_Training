@@ -1,0 +1,17 @@
+package bo;
+
+import java.util.List;
+
+import model.Locker;
+
+public interface LockerBO {
+	
+	public static List<String> getallfiles() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public Locker createfile(Locker locker);
+	public Locker deletefile(Locker locker);
+	public Locker searchfile(String filename);
+
+}
