@@ -34,8 +34,7 @@ public class LockerMain {
 		System.out.println("\nPlease select the options which you want to try");
 		System.out.println("1. Get list of files sorted in Ascending order");
 		System.out.println("2. Perform Operations on file");
-		System.out.println("3. Close the app"
-				+ "lication");
+		System.out.println("3. Close the application");
 		
 		choice=Integer.parseInt(sc.nextLine());
 		
